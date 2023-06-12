@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border: rgba(0, 0, 0, 0.15);
+    --border-radius: 1.2rem;
+}
+
+.content {
+    height: 70rem;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 8rem 10rem;
+    
+    }
+img {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 {
+    margin-top: 5rem;
+    text-align: center;
+}
+/* @media screen and (min-width: 1024px) { */
+    .content { 
+        grid-template-areas: 
+        ". . . . ."
+        "hero hero hero conteudo conteudo"
+        "hero hero hero conteudo conteudo"
+        ". . . conteudo conteudo";
+        
+    }
+    
+
+main {
+    grid-area: conteudo;
+    
+}
+
+aside {
+    grid-area: hero;
+}
+
+
+
+h1 {
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: black;
+    
+}
+span {
+    color: rgb(251, 93, 154);
+}
+
+.page-content {
+    height: 52rem;
+    width: 60rem;
+    border: 1px solid rgba(198, 196, 196, 0.921);
+    border-radius: 2.5%;
+    display: grid;
+    align-items: center;
+    margin-bottom: 4.4rem;
+    
+    
+    
+    
+}
+.cadastre {
+    width: 42.9rem;
+    font-size: 2.3rem;
+    margin-left: 5.5rem;
+    margin-top: 4.4rem;
+}
+    
+    
+h2 {
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+.botao {
+    width: 48.9rem;
+    min-height: 5.5rem;
+    background-color:rgb(30, 252, 252);
+    border-radius: 0.9rem;
+    font-size: 3rem;
+    font-family: 'Didact Gothic', sans-serif;
+    color: white;
+    text-align: center;
+    margin:auto;
+   
+}
+.botao2 {
+    width: 48.9rem;
+    min-height: 5.5rem;
+    background-color: rgb(241, 94, 150);
+    border-radius: 0.9rem;
+    font-size: 3rem;
+    font-family: 'Didact Gothic', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    
+}
+.texto {
+    width: 48.8rem;
+    height: 2.1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0.9rem;
+    
+}
+.anchor{
+    width: 48.8rem;
+    height: 2.7rem;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: center;
+    text-shadow: 1px 1.5px rgba(0, 0, 0, 0.115);
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 4.4rem;
+}
+a{
+    text-decoration: none;
+    } 
+.botao a, .botao2 a {
+    color: white;
+}
+.anchor a {
+    color: black;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400rem;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+main form input {
+    width: 489px;
+    height: 5.5rem;
+    top: 21.8rem;
+    left: 54.3rem;
+
+    background: #FFFFFF;
+
+    border: var(--default-border);
+    border-radius: (--border-radius);
+    position: relative;
+}
+main form input + i {
+    position: absolute;
+    right: 0;
+    top: 2.7rem;
+    background-color: transparent;
+    justify-content: baseline;
+}
