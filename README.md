@@ -1,1 +1,1 @@
-font-family: 'Roboto', sans-serif;
+/* Primeiro projeto de criação de interfaces utilizando HTML e CSS */
